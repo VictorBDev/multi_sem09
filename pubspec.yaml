@@ -30,6 +30,7 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
+  flutter_svg: ^1.0.3
 
 
   # The following adds the Cupertino Icons font to your application.
@@ -70,6 +71,19 @@ flutter:
     - assets/images/munich.png
     - assets/images/venecia.png
     - assets/images/grecia.png
+    #productos
+    - assets/images/webcam.png
+    - assets/images/ssd.png
+    - assets/images/reposaPies.png
+    - assets/images/mousePad.png
+    - assets/images/cooler.png
+    - assets/images/mouse.png
+    - assets/images/usbHub.png
+    - assets/images/powerbank.png
+    - assets/images/auricular.png
+    - assets/images/teclado.png
+    - assets/images/laptop.svg
+    - assets/images/skate.jpeg
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware
@@ -101,15 +115,15 @@ flutter:
   - family: Montserrat
     fonts:
     - asset: assets/fonts/Montserrat-Regular.ttf
-  - family: Nutino
+  - family: Nunito
     fonts:
-    - asset: assets/fonts/Nutino-Regular.ttf
+    - asset: assets/fonts/Nunito-Regular.ttf
   - family: TimesNewRoman
     fonts:
-    - asset: assets/fonts/TimesNewRoman.ttf
+    - asset: assets/fonts/Times-New-Roman.ttf
   - family: Arial
     fonts:
-    - asset: assets/fonts/Arial.ttfS
+    - asset: assets/fonts/Arial.ttf
 
   # For details regarding fonts from package dependencies,
   # see https://flutter.dev/custom-fonts/#from-packages

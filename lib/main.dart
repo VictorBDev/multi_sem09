@@ -1,10 +1,12 @@
 import 'package:flutter/material.dart';
 
 void main() {
-  runApp(MyApp());
+  runApp(const MyApp());
 }
 
 class MyApp extends StatelessWidget {
+  const MyApp({super.key});
+
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -18,7 +20,7 @@ class MyApp extends StatelessWidget {
             children: [
               Image.asset('assets/images/logo.png'),
               const SizedBox(height: 20),
-              Text(
+              const Text(
                 'Texto con fuente Jacquard Regular',
                 style: TextStyle(
                   fontFamily: 'Jacquard',
@@ -26,12 +28,12 @@ class MyApp extends StatelessWidget {
                 ),
               ),
               const SizedBox(height: 20),
-              Text(
+              const Text(
                 'Texto con fuente Roboto Regular',
                 style: TextStyle(fontSize: 20, fontFamily: 'Roboto-Bold'),
               ),
               const SizedBox(height: 20),
-              Text(
+              const Text(
                 'Texto con fuente Normal Víctor Balboa',
                 style: TextStyle(
                   fontSize: 20,

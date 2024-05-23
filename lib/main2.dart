@@ -71,9 +71,11 @@ List<Variado> VariadosList = [
   ),
 ];
 
-void main() => runApp(MyApp());
+void main() => runApp(const MyApp());
 
 class MyApp extends StatelessWidget {
+  const MyApp({super.key});
+
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -81,7 +83,7 @@ class MyApp extends StatelessWidget {
         title: 'Variados',
         home: Scaffold(
             appBar: AppBar(
-              title: Text('Variados'),
+              title: const Text('Variados'),
             ),
             body: ListView.builder(
                 itemCount: VariadosList.length,
@@ -89,24 +91,24 @@ class MyApp extends StatelessWidget {
                   // Determinar la fuente según el tipo
                   TextStyle nombreStyle;
                   if (VariadosList[index].tipo == 'Alimento') {
-                    nombreStyle = TextStyle(
+                    nombreStyle = const TextStyle(
                       fontFamily: 'OpenSans',
                       fontSize: 20.0,
                     );
                   } else if (VariadosList[index].tipo == 'Animal') {
-                    nombreStyle = TextStyle(
+                    nombreStyle = const TextStyle(
                       fontFamily: 'Lato',
                       fontSize: 20.0,
                     );
                   } else {
-                    nombreStyle = TextStyle(
+                    nombreStyle = const TextStyle(
                       fontFamily: 'Ubuntu',
                       fontSize: 20.0,
                     );
                   }
 
                   return ListTile(
-                      leading: Container(
+                      leading: SizedBox(
                         width: 100,
                         child: Image.asset(
                           'assets/images/${VariadosList[index].imagen}',
@@ -118,7 +120,7 @@ class MyApp extends StatelessWidget {
                       ),
                       subtitle: Text(
                         'Tipo: ${VariadosList[index].tipo}',
-                        style: TextStyle(
+                        style: const TextStyle(
                           fontFamily: 'Lato',
                           fontSize: 15.0,
                         ),
