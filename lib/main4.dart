@@ -46,16 +46,11 @@ class ImageGallery extends StatelessWidget {
       appBar: AppBar(
         title: const Text('Galería de Imágenes'),
       ),
-      body: GridView.builder(
-        gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
-          crossAxisCount: 2,
-          mainAxisSpacing: 20.0, // Espaciado vertical entre las imágenes
-          crossAxisSpacing: 20.0, // Espaciado horizontal entre las imágenes
-        ),
+      body: ListView.builder(
         itemCount: imagesList.length,
         itemBuilder: (context, index) {
           return Padding(
-            padding: const EdgeInsets.all(20.0), // Ajusta el espaciado aquí
+            padding: const EdgeInsets.all(20.0),
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
